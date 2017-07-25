@@ -35,7 +35,8 @@ body {
 .text {
   font-size: 50px;
   font-family:  'Raleway', sans-serif;
-  text-align: center
+  text-align: center;
+  color: #bfbfbf;
 }
 @keyframes mouseAnimation {
 
