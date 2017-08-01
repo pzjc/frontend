@@ -1,0 +1,244 @@
+body {
+background: whitesmoke;
+display: flex;
+flex-direction:column;
+height: 100%;
+width: 100%;}
+
+#container {
+margin:auto;
+height:100%;
+width:100%;
+display: flex;
+flex-direction:column;
+}
+
+#menu {
+
+	height: 10%;
+	display: flex;
+	text-align: center;
+	margin: auto;
+}
+
+#menu ul { list-style: none; text-align: center; word-spacing: 30px;}
+
+#menu ul li {
+
+
+display: inline;
+font-family: sans-serif;
+font-size: 25px;
+color: black;
+
+}
+
+#menu ul li:hover { color: darkred; cursor: pointer;}
+
+#icerik {
+	margin:auto;
+	width:100%;
+	height: 100%;
+	display: flex;
+	background: white;
+	overflow: hidden;
+}
+
+#pages {
+margin:auto;
+position: relative;
+height:100%;
+display: flex;
+flex: 0 0 400%;
+flex-direction:row;
+transition:linear;
+}
+
+#explore,#home,#subscribe{
+
+height: 100%;
+width:25%;
+font-size: 100px;
+font-family: sans-serif;
+text-align: center;
+line-height: 200px;
+color: black;
+
+}
+
+/*#explore { background: deepskyblue; }
+#home { background: aquamarine; }
+#subscribe { background: gold; }*/
+/*.show {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -75px;
+  background: #e74c3c;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  border-bottom: 2px solid #c0392b;
+  cursor: pointer;
+	font-size: 20px;
+}
+.show:hover {
+  background: #c0392b;
+}
+.show:active {
+  transform: scale(0.95);
+	transition: 0.7s;
+}*/
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+/*subscribe from here*/
+/*basic reset*/
+
+#subscribe {
+    overflow: hidden;
+}
+/*form styles*/
+#msform {
+	width: 500px;
+	height: 300px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform select, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	height:30px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 40px;
+	height:130px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+	height:45px;
+}
+
+.fs-subtitle2 {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-top: -100px;
+	margin-bottom: 60px;
+	height:45px;
+}
+
+.fs-subtitle3 {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-top: -60px;
+	margin-bottom: 120px;
+	height:45px;
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
