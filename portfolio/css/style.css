@@ -302,7 +302,7 @@ button.light {
   padding-bottom: 10px;
 }
 .project-details p {
-  font-size: 0.9em;
+  font-size: 16px;
   text-align: left;
   color: #3c3c3c;
   font-family: 'Raleway', sans-serif;
@@ -373,7 +373,7 @@ button.light {
 /*modal ends here*/
 
 /*Orange mockup starts here*/
-.illustration{
+.illustration small{
   max-height: 400px;
   margin-bottom: 20px;
   margin-top: 20px;
@@ -386,6 +386,16 @@ button.light {
 }
 .illustration .right{
   float:right;
+}
+.illustration medium{
+  max-width: 600px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.illustration large{
+  max-width: 800px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .caption {
@@ -414,3 +424,10 @@ button.light {
 }
 
 /*Orange mockup ends here*/
+
+/* Airbnb starts here*/
+.airbnb ul{
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+/*Airbnb ends here*/
