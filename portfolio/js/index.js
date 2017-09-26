@@ -27,9 +27,6 @@ $("#portfolio").hover(hover2);
 $("#other").hover(hover4);
 //$("li").eq(3).hover(hover4);
 
-/*
- * Noel Delgado | @pixelia_me
- */
 // portfolio part starts here
 var items = []
   , point = document.querySelector('svg').createSVGPoint();
