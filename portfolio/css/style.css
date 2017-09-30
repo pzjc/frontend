@@ -13,11 +13,6 @@
   --pink:#FFaaa6;
   --green-grad: #283a39;
   --pink-grad: #FBD6E4;
-  --forest: "https://images.unsplash.com/photo-1458724029936-2cc6ee38f5ef?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80";
-  --red-and-white: "https://images.unsplash.com/photo-1468796835058-f43f737a4941?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=844&q=80";
-  --space: "https://images.unsplash.com/photo-1435224668334-0f82ec57b605?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80";
-  --moon: "https://images.unsplash.com/photo-1468906824284-242b500c38b4?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=994&q=80";
-  --bird: "https://images.unsplash.com/photo-1416183793821-cfdaa8c72745?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80";
 }
 
 section {
@@ -25,7 +20,7 @@ section {
   align-items: center;
   min-height: 100vh;
   padding-bottom: 10vh;
-  //max-width: 100vw;
+  max-width: 100vw;
 }
 section:nth-child(2) {
   /* --sky */
@@ -103,35 +98,22 @@ hr.head {
   height:13px;
   fill: #283a39;
 }
+
 .portfolio {
-  left: 100px;
-  min-width: calc(100vw - 250px);
-  min-height: 100vh;
-  margin-left: 100px;
+  max-width: calc(100vw - 250px);
+  max-height: 100vh;
+  margin-left: 15vw;
   transform: translate(0, 0px);
-  display: flex;
-  flex-direction: column;
 }
 
-li {
-  list-style-type: none;
-}
-
-.links {
-  border-left: 2px solid #757F9A;
-  padding-left: 2px;
-}
-
-h3 {
-  color: white;
-  padding-bottom: 10px;
-  font-size: 5vw;
-}
-
-a, a:hover, a:visited, a:active {
+a{
   text-decoration: none;
   color: inherit;
   z-index: 10;
+}
+a:hover{
+    opacity: .8;
+    color:#6b6b6b;
 }
 
 .other-para {
@@ -147,26 +129,22 @@ a, a:hover, a:visited, a:active {
 
 
 /*portfolio part starts here*/
-* {
+/** {
   margin: 0;
   box-sizing: border-box;
-}
-
-a:hover {
-  opacity: .8;
-}
+}*/
 .small {
   font-size: 1rem;
   margin-top: 1em;
 }
-
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
+
 main{
-  padding-top:11rem;
+  padding-top:10vh;
 }
 svg {
   position: absolute;
@@ -215,6 +193,7 @@ image {
 }
 
 .items {
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +265,7 @@ button.light {
 /*modal starts here*/
 .portfolio-modal .modal-content {
     padding: 100px 0;
-    min-height: 100%;
+    /*min-height: 100%;*/
     border: 0;
     border-radius: 0;
     text-align: center;
@@ -373,31 +352,21 @@ button.light {
 /*modal ends here*/
 
 /*Orange mockup starts here*/
-.illustration small{
+.illustration{
   max-height: 400px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.illustration .center{
-  float:right;
-}
-.illustration .left{
-  float:left;
-}
-.illustration .right{
-  float:right;
-}
-.illustration medium{
-  max-width: 600px;
+.medium img{
+  max-height: : 600px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.illustration large{
-  max-width: 800px;
+.large img{
+  max-height: : 800px !important;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
 .caption {
   max-width: 500px;
   border-bottom-width:1px;
