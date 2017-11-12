@@ -116,23 +116,9 @@ a:hover{
     color:#6b6b6b;
 }
 
-.other-para {
-  border-left: 1px solid var(--white);
-  max-height: 320px;
-  max-width: 250px;
-  transform: translate(0, 25vh);
-  font-family: 'Quattrocento';
-  font-size: 14px;
-  color: var(--white);
-  line-height: 22px;
-}
 
 
 /*portfolio part starts here*/
-/** {
-  margin: 0;
-  box-sizing: border-box;
-}*/
 .small {
   font-size: 1rem;
   margin-top: 1em;
